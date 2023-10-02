@@ -1,0 +1,510 @@
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  background: radial-gradient(circle, black, rgba(255, 255, 255, 0.5));
+  background-color: #fff;
+  background-blend-mode: overlay;
+}
+
+.footer {
+  pointer-events: all !important;
+}
+
+.poster-responsive {
+  width: 100%;
+  height: auto;
+}
+
+*, ::after, ::before {
+  box-sizing: unset;
+}
+
+/*
+.row, .col::after, .col::before {
+    box-sizing: border-box;
+}
+
+*/
+h1.sm-h1 {
+  font-size: 70%;
+}
+
+.credits {
+  width: 100%;
+  top: 90%;
+}
+
+.text {
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 0.8rem;
+  color: #333;
+  /*	pointer-events: none;*/
+}
+
+.centered, .cube > .piece > .element > .sticker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.scene {
+  width: 100%;
+  /*	height: 100%; */
+  height: 400px;
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+.scene > .pivot {
+  width: 0;
+  height: 0;
+  transition: 0.18s;
+}
+.scene .anchor {
+  width: 2em;
+  height: 6em;
+}
+.scene div {
+  position: absolute;
+  transform-style: inherit;
+}
+
+#piece22 > .element.back > .sticker,
+#piece21 > .element.back > .sticker,
+#piece26 > .element.back > .sticker {
+  transform: rotate(90deg) !important;
+}
+
+#piece26 > .element.bottom > .sticker,
+#piece25 > .element.bottom > .sticker,
+#piece38 > .element.right > .sticker,
+#piece42 > .element.right > .sticker {
+  transform: rotate(270deg) !important;
+}
+
+#piece37 > .element.left > .sticker,
+#piece21 > .element.left > .sticker,
+#piece25 > .element.left > .sticker {
+  transform: rotate(180deg) !important;
+}
+
+/*
+#piece16 > .element > .sticker {
+	transform: rotate(90deg) !important;
+}
+
+#piece2 > .element > .sticker {
+	transform: rotate(270deg) !important;
+}
+
+#piece1 > .element > .sticker {
+	transform: rotate(180deg) !important;
+}
+*/
+.TrialDesign_Item_1 {
+  background-image: URL("https://static.thenounproject.com/png/3430242-200.png");
+  background-size: cover;
+  transform: rotate(180deg) !important;
+}
+
+.TrialDesign_Item_2 {
+  background-image: URL("https://static.thenounproject.com/png/2033837-200.png");
+  background-size: cover;
+  transform: rotate(180deg) !important;
+}
+
+.TrialDesign_Item_3 {
+  background-image: URL("https://static.thenounproject.com/png/3428234-200.png");
+  background-size: cover;
+  transform: rotate(180deg) !important;
+}
+
+.TrialDesign_Item_4 {
+  background-image: URL("https://static.thenounproject.com/png/2490291-200.png");
+  background-size: cover;
+  transform: rotate(180deg) !important;
+}
+
+.TrialDesign_Item_5 {
+  background-image: URL("https://static.thenounproject.com/png/3012925-200.png");
+  background-size: cover;
+  transform: rotate(180deg) !important;
+}
+
+.TrialDesign_Item_6 {
+  background-image: URL("https://static.thenounproject.com/png/2215586-200.png");
+  background-size: cover;
+  transform: rotate(180deg) !important;
+}
+
+.TrialDesign_Item_7 {
+  background-image: URL("https://static.thenounproject.com/png/3060751-200.png");
+  background-size: cover;
+  transform: rotate(180deg) !important;
+}
+
+.TrialDesign_Item_8 {
+  background-image: URL("https://static.thenounproject.com/png/2326859-200.png");
+  background-size: cover;
+  transform: rotate(180deg) !important;
+}
+
+.TrialDesign_Item_9 {
+  background-image: URL("https://static.thenounproject.com/png/3049447-200.png");
+  background-size: cover;
+  transform: rotate(180deg) !important;
+}
+
+.Data_Item_1 {
+  background-image: URL("https://static.thenounproject.com/png/2301608-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.Data_Item_2 {
+  background-image: URL("https://static.thenounproject.com/png/2715255-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.Data_Item_3 {
+  background-image: URL("https://static.thenounproject.com/png/2942558-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.Data_Item_4 {
+  background-image: URL("https://static.thenounproject.com/png/3012925-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.Data_Item_5 {
+  background-image: URL("https://static.thenounproject.com/png/3325779-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.Data_Item_6 {
+  background-image: URL("https://static.thenounproject.com/png/3215056-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.Data_Item_7 {
+  background-image: URL("https://static.thenounproject.com/png/1186269-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.Data_Item_8 {
+  background-image: URL("https://static.thenounproject.com/png/2939479-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.Data_Item_9 {
+  background-image: URL("https://static.thenounproject.com/png/1057671-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.Infrastructure_Item_1 {
+  background-image: URL("https://static.thenounproject.com/png/736733-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.Infrastructure_Item_2 {
+  background-image: URL("https://static.thenounproject.com/png/1081851-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.Infrastructure_Item_3 {
+  background-image: URL("https://static.thenounproject.com/png/1719081-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.Infrastructure_Item_4 {
+  background-image: URL("https://static.thenounproject.com/png/2490291-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.Infrastructure_Item_5 {
+  background-image: URL("https://static.thenounproject.com/png/818016-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.Infrastructure_Item_6 {
+  background-image: URL("https://static.thenounproject.com/png/1864885-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.Infrastructure_Item_7 {
+  background-image: URL("https://static.thenounproject.com/png/2017306-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.Infrastructure_Item_8 {
+  background-image: URL("https://static.thenounproject.com/png/2556840-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.Infrastructure_Item_9 {
+  background-image: URL("https://static.thenounproject.com/png/957672-200.png");
+  background-size: cover;
+  transform: rotate(270deg) !important;
+}
+
+.SoftwareDev_Item_1 {
+  background-image: URL("https://static.thenounproject.com/png/3156376-200.png");
+  background-size: cover;
+}
+
+.SoftwareDev_Item_2 {
+  background-image: URL("https://static.thenounproject.com/png/1932989-200.png");
+  background-size: cover;
+}
+
+.SoftwareDev_Item_3 {
+  background-image: URL("https://static.thenounproject.com/png/754074-200.png");
+  background-size: cover;
+}
+
+.SoftwareDev_Item_4 {
+  background-image: URL("https://static.thenounproject.com/png/2715698-200.png");
+  background-size: cover;
+}
+
+.SoftwareDev_Item_5 {
+  background-image: URL("https://static.thenounproject.com/png/4073082-200.png");
+  background-size: cover;
+}
+
+.SoftwareDev_Item_6 {
+  background-image: URL("https://static.thenounproject.com/png/1079403-200.png");
+  background-size: cover;
+}
+
+.SoftwareDev_Item_7 {
+  background-image: URL("https://static.thenounproject.com/png/1912161-200.png");
+  background-size: cover;
+}
+
+.SoftwareDev_Item_8 {
+  background-image: URL("https://static.thenounproject.com/png/1391119-200.png");
+  background-size: cover;
+}
+
+.SoftwareDev_Item_9 {
+  background-image: URL("https://static.thenounproject.com/png/3049447-200.png");
+  background-size: cover;
+}
+
+.Regulations_Item_1 {
+  background-image: URL("https://static.thenounproject.com/png/1067176-200.png");
+  background-size: cover;
+}
+
+.Regulations_Item_2 {
+  background-image: URL("https://static.thenounproject.com/png/3967870-200.png");
+  background-size: cover;
+}
+
+.Regulations_Item_3 {
+  background-image: URL("https://static.thenounproject.com/png/2012616-200.png");
+  background-size: cover;
+}
+
+.Regulations_Item_4 {
+  background-image: URL("https://static.thenounproject.com/png/2592896-200.png");
+  background-size: cover;
+}
+
+.Regulations_Item_5 {
+  background-image: URL("https://static.thenounproject.com/png/1661080-200.png");
+  background-size: cover;
+}
+
+.Regulations_Item_6 {
+  background-image: URL("https://static.thenounproject.com/png/1634556-200.png");
+  background-size: cover;
+}
+
+.Regulations_Item_7 {
+  background-image: URL("https://static.thenounproject.com/png/2373772-200.png");
+  background-size: cover;
+}
+
+.Regulations_Item_8 {
+  background-image: URL("https://static.thenounproject.com/png/3732359-200.png");
+  background-size: cover;
+}
+
+.Regulations_Item_9 {
+  background-image: URL("https://static.thenounproject.com/png/167672-200.png");
+  background-size: cover;
+}
+
+.Collaboration_Item_1 {
+  background-image: URL("https://static.thenounproject.com/png/1168379-200.png");
+  background-size: cover;
+  transform: rotate(90deg) !important;
+}
+
+.Collaboration_Item_2 {
+  background-image: URL("https://static.thenounproject.com/png/3257159-200.png");
+  background-size: cover;
+  transform: rotate(90deg) !important;
+}
+
+.Collaboration_Item_3 {
+  background-image: URL("https://static.thenounproject.com/png/3118554-200.png");
+  background-size: cover;
+  transform: rotate(90deg) !important;
+}
+
+.Collaboration_Item_4 {
+  background-image: URL("https://static.thenounproject.com/png/1709022-200.png");
+  background-size: cover;
+  transform: rotate(90deg) !important;
+}
+
+.Collaboration_Item_5 {
+  background-image: URL("https://static.thenounproject.com/png/1595412-200.png");
+  background-size: cover;
+  transform: rotate(90deg) !important;
+}
+
+.Collaboration_Item_6 {
+  background-image: URL("https://static.thenounproject.com/png/1862733-200.png");
+  background-size: cover;
+  transform: rotate(90deg) !important;
+}
+
+.Collaboration_Item_7 {
+  background-image: URL("https://static.thenounproject.com/png/3631603-200.png");
+  background-size: cover;
+  transform: rotate(90deg) !important;
+}
+
+.Collaboration_Item_8 {
+  background-image: URL("https://static.thenounproject.com/png/3728735-200.png");
+  background-size: cover;
+  transform: rotate(90deg) !important;
+}
+
+.Collaboration_Item_9 {
+  background-image: URL("https://static.thenounproject.com/png/3883014-200.png");
+  background-size: cover;
+  transform: rotate(90deg) !important;
+}
+
+#ukcrc {
+  font-size: 150%;
+  color: #111;
+  width: 100%;
+  text-align: center;
+}
+
+#ukcrc-rc-item {
+  font-size: 110%;
+  color: #050505;
+  width: 100%;
+  text-align: center;
+}
+
+#ukcrc-rc-topic {
+  font-size: 110%;
+  color: #050505;
+  width: 100%;
+  text-align: center;
+}
+
+.cube {
+  font-size: 190%;
+  margin-left: -1em;
+  margin-top: -1em;
+}
+.cube > .piece {
+  width: 1.9em;
+  height: 1.9em;
+}
+.cube > .piece > .element {
+  width: 100%;
+  height: 100%;
+  background: #0A0A0A;
+  outline: 1px solid transparent;
+  border: 0.05em solid #0A0A0A;
+  border-radius: 10%;
+}
+.cube > .piece > .element.left {
+  transform: rotateX(0deg) rotateY(-90deg) rotateZ(180deg) translateZ(1em);
+}
+.cube > .piece > .element.right {
+  transform: rotateX(0deg) rotateY(90deg) rotateZ(90deg) translateZ(1em);
+}
+.cube > .piece > .element.back {
+  transform: rotateX(0deg) rotateY(180deg) rotateZ(-90deg) translateZ(1em);
+}
+.cube > .piece > .element.front {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(1em);
+}
+.cube > .piece > .element.bottom {
+  transform: rotateX(-90deg) rotateY(0deg) rotateZ(-90deg) translateZ(1em);
+}
+.cube > .piece > .element.top {
+  transform: rotateX(90deg) rotateY(0deg) rotateZ(180deg) translateZ(1em);
+}
+.cube > .piece > .element > .sticker {
+  transform: translateZ(2px);
+  width: 95%;
+  height: 95%;
+  border-radius: 10%;
+  outline: 1px solid transparent;
+  box-shadow: inset 0.05em 0.05em 0.2rem 0 rgba(255, 255, 255, 0.25), inset -0.05em -0.05em 0.2rem 0 rgba(0, 0, 0, 0.25);
+}
+.cube > .piece > .element > .sticker.blue {
+  background-color: #001ca8;
+}
+.cube > .piece > .element > .sticker.green {
+  background-color: #006E16;
+}
+.cube > .piece > .element > .sticker.white {
+  background-color: #DDD;
+}
+.cube > .piece > .element > .sticker.yellow {
+  background-color: #E0AE00;
+}
+.cube > .piece > .element > .sticker.orange {
+  background-color: #FF5000;
+}
+.cube > .piece > .element > .sticker.red {
+  background-color: #DF0500;
+}
+
+.activities-cat {
+  padding: 30px;
+}
+
+.activities-header img {
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+
+.activities-header h2, .activities-header h5 {
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
